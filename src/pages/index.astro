@@ -9,9 +9,21 @@ import BentoGrid from '@sections/marketing/BentoGrid.astro';
 import PricingTable from '@sections/pricing/PricingTable.astro';
 import TestimonialsSection from '@sections/social-proof/TestimonialsSection.astro';
 import CTA from '@sections/marketing/CTA.astro';
-import Newsletter from '@sections/marketing/Newsletter.astro';
 import { siteConfig } from '@/config';
 import IntegrationsGrid from '@sections/marketing/IntegrationsGrid.astro';
+
+const EMAIL_PRICING_LINK =
+  `https://mail.google.com/mail/u/0/?fs=1` +
+  `&to=daniswastaken@gmail.com` +
+  `&su=Inquiry%20About%20Snapshot%20Pricing` +
+  `&body=Hi%20there%2C%0A%0AI%20hope%20you%E2%80%99re%20doing%20well.%0A%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20Snapshot%E2%80%99s%20pricing%20plans%20and%20options.%20Could%20you%20please%20share%20the%20details%20or%20let%20me%20know%20how%20to%20get%20started%3F%0A%0AThank%20you%21%0A%0ABest%20regards%2C%0A` +
+  `&tf=cm`;
+
+const EMAIL_US =
+  `https://mail.google.com/mail/?view=cm&fs=1` +
+  `&to=daniswastaken@gmail.com` +
+  `&su=Greetings,%20Snapshot.`;
+
 
 type TestimonialEntry = CollectionEntry<'testimonials'>;
 
@@ -30,7 +42,6 @@ const integrations = [
     category: 'Development',
     featured: true,
     description: 'Full CI/CD integration with GitLab repositories.',
-    href: '/integrations',
   },
   {
     name: 'Slack',
@@ -38,7 +49,6 @@ const integrations = [
     category: 'Communication',
     featured: true,
     description: 'Get deployment notifications and alerts in your Slack channels.',
-    href: '/integrations',
   },
   {
     name: 'n8n',
@@ -46,7 +56,6 @@ const integrations = [
     category: 'Automation',
     featured: true,
     description: 'Workflow automation with n8n integrations.',
-    href: '/integrations',
   },
 ];
 
@@ -60,7 +69,6 @@ const bentoItems = [
     icon: 'lucide:shield-check',
     size: 'large' as const,
     accent: 'primary' as const,
-    href: '/docs/fallback',
   },
   {
     title: 'Live Origin Switching',
@@ -68,7 +76,6 @@ const bentoItems = [
       'Traffic flows to your server when it’s online and switches instantly when it’s not—no redeploys required.',
     icon: 'lucide:shuffle',
     accent: 'blue' as const,
-    href: '/docs/routing',
   },
   {
     title: 'Edge-First Routing',
@@ -76,7 +83,6 @@ const bentoItems = [
       'Requests are handled close to users with intelligent routing for speed, reliability, and continuity.',
     icon: 'lucide:globe',
     accent: 'green' as const,
-    href: '/docs/edge-routing',
   },
   {
     title: 'Shared Control',
@@ -85,7 +91,6 @@ const bentoItems = [
     icon: 'lucide:users',
     size: 'medium' as const,
     accent: 'purple' as const,
-    href: '/docs/teams',
   },
 ];
 
@@ -131,15 +136,15 @@ const features = [
 const pricingPlans = [
   {
     name: 'Hobby',
-    monthlyPrice: 0,
+    monthlyPrice: 12,
     description: 'Perfect for side projects',
-    features: ['3 projects', '100 GB bandwidth/month', 'Automatic HTTPS', 'Community support'],
-    cta: { label: 'Start Free', href: '/register' },
+    features: ['1 projects', '50 GB bandwidth/month', 'Automatic HTTPS', 'Community support'],
+    cta: { label: 'Contact Sales', href: EMAIL_PRICING_LINK },
   },
   {
     name: 'Pro',
-    monthlyPrice: 20,
-    description: 'For professional developers',
+    monthlyPrice: 30,
+    description: 'Contact Sales',
     features: [
       'Unlimited projects',
       '1 TB bandwidth/month',
@@ -147,7 +152,7 @@ const pricingPlans = [
       'Priority support',
     ],
     highlighted: true,
-    cta: { label: 'Start Free Trial', href: '/register' },
+    cta: { label: 'Contact Sales', href: EMAIL_PRICING_LINK },
   },
   {
     name: 'Enterprise',
@@ -155,7 +160,7 @@ const pricingPlans = [
     customPrice: 'Custom',
     description: 'For large organizations',
     features: ['Unlimited everything', 'SSO & SAML', 'SLA guarantee', 'Dedicated support'],
-    cta: { label: 'Contact Sales', href: '/contact' },
+    cta: { label: 'Contact Sales', href: EMAIL_PRICING_LINK },
   },
 ];
 ---
@@ -168,7 +173,7 @@ const pricingPlans = [
     title="Online, Even When Your Server Isn't"
     subtitle="Snapshot ensures your services stays online with seamless failover and smart routing."
     primaryCTA={{ label: 'Get Started', href: '/register' }}
-    secondaryCTA={{ label: 'Contact', href: '/dashboard' }}
+    secondaryCTA={{ label: 'Contact Us', href: EMAIL_US }}
   />
 
   <LogoCloud
