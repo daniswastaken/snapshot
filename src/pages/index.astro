@@ -54,32 +54,34 @@ const featuredIntegrations = integrations.filter((i) => i.featured);
 
 const bentoItems = [
   {
-    title: 'Preview Deployments',
+    title: 'Smart Fallback',
     description:
-      'Every PR gets its own preview URL. Share with your team and get feedback before merging.',
-    icon: 'lucide:eye',
+      'Automatically serve a fallback when your origin server goes offline, keeping your service reachable at all times.',
+    icon: 'lucide:shield-check',
     size: 'large' as const,
     accent: 'primary' as const,
-    href: '/docs/previews',
+    href: '/docs/fallback',
   },
   {
-    title: 'Instant Rollbacks',
-    description: 'One-click rollback to any previous deployment.',
-    icon: 'lucide:history',
-    accent: 'blue' as const,
-    href: '/docs/rollback',
-  },
-  {
-    title: 'Edge Caching',
-    description: 'Smart caching at 200+ edge locations worldwide.',
-    icon: 'lucide:database',
-    accent: 'green' as const,
-    href: '/docs/edge-network',
-  },
-  {
-    title: 'Team Collaboration',
+    title: 'Live Origin Switching',
     description:
-      'Role-based access, deployment comments, and audit logs for your entire organization.',
+      'Traffic flows to your server when it’s online and switches instantly when it’s not—no redeploys required.',
+    icon: 'lucide:shuffle',
+    accent: 'blue' as const,
+    href: '/docs/routing',
+  },
+  {
+    title: 'Edge-First Routing',
+    description:
+      'Requests are handled close to users with intelligent routing for speed, reliability, and continuity.',
+    icon: 'lucide:globe',
+    accent: 'green' as const,
+    href: '/docs/edge-routing',
+  },
+  {
+    title: 'Shared Control',
+    description:
+      'Manage Snapshots together with clear access control and shared configuration across your team.',
     icon: 'lucide:users',
     size: 'medium' as const,
     accent: 'purple' as const,
@@ -222,7 +224,7 @@ const pricingPlans = [
   />
 
   <FeaturesSection
-    title="Everything You Need to Ship"
+    title="Everything You Need"
     subtitle="From development to production, Snapshot provides all the tools your team needs to move fast and stay online."
     features={features}
     background="muted"
