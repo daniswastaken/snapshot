@@ -1,7 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import Header from '@layout/Header.astro';
-import Footer from '@layout/Footer.astro';
 import AnnouncementBar from '@layout/AnnouncementBar.astro';
 import { siteConfig } from '@/config';
 
@@ -58,6 +57,5 @@ const { announcement } = siteConfig;
     <main id="main-content" class="flex-1">
       <slot />
     </main>
-    <Footer />
   </div>
 </BaseLayout>
