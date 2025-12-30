@@ -42,7 +42,6 @@ const integrations = [
     category: 'Infrastructure',
     featured: true,
     description: 'Full CI/CD integration with GitLab repositories.',
-    href: '/integrations',
   },
   {
     name: 'Crafty Controller',
@@ -50,7 +49,6 @@ const integrations = [
     category: 'Game Servers',
     featured: true,
     description: 'Get deployment notifications and alerts in your Slack channels.',
-    href: '/integrations',
   },
   {
     name: 'CasaOS',
@@ -58,7 +56,6 @@ const integrations = [
     category: 'Platform',
     featured: true,
     description: 'Workflow automation with n8n integrations.',
-    href: '/integrations',
   },
 ];
 const featuredIntegrations = integrations.filter((i) => i.featured);
@@ -232,6 +229,7 @@ const pricingPlans = [
       variant="detailed"
       columns={3}
       background="default"
+      invertOnDark={false}
     />
   </section>
 
@@ -279,7 +277,7 @@ const pricingPlans = [
 
   <CTA
     title="Start with Snapshot"
-    description="Turn your server into a reliable public endpoint."
+    description="Always reachable, even when your server isn’t."
     action={ctaAction}
   />
 </MarketingLayout>
