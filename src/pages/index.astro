@@ -90,39 +90,39 @@ const bentoItems = [
 const features = [
   {
     icon: 'lucide:zap',
-    title: 'Lightning Fast Deploys',
+    title: 'Instant Availability',
     description:
-      'Push to deploy in seconds, not minutes. Our optimized build pipeline gets your changes live faster than ever.',
+      'Snapshot goes live in seconds. When your origin server is online, traffic flows through it. When it’s not, Snapshot keeps your site reachable.',
   },
   {
     icon: 'lucide:refresh-cw',
-    title: 'Automatic Rollbacks',
+    title: 'Automatic Failover',
     description:
-      'Something went wrong? Instantly roll back to any previous deployment with a single click.',
+      'If your server goes down, Snapshot automatically switches to a fallback without manual intervention or redeploys.',
   },
   {
     icon: 'lucide:globe',
-    title: 'Global Edge Network',
+    title: 'Smart Global Routing',
     description:
-      'Your app runs on 200+ edge locations worldwide, ensuring blazing fast load times for every user.',
+      'Requests are routed intelligently across regions, ensuring fast access and seamless continuity for users worldwide.',
   },
   {
     icon: 'lucide:shield',
-    title: 'Built-in Security',
+    title: 'Always-On Protection',
     description:
-      'SSL certificates, DDoS protection, and security headers configured automatically for every project.',
+      'Built-in HTTPS, DDoS mitigation, and secure routing protect your service whether your server is online or offline.',
   },
   {
     icon: 'lucide:bar-chart',
-    title: 'Real-time Analytics',
+    title: 'Uptime & Traffic Insights',
     description:
-      'Monitor performance, track errors, and understand your users with built-in observability tools.',
+      'Understand when your origin is serving traffic, when fallbacks activate, and how users access your service.',
   },
   {
     icon: 'lucide:handshake',
-    title: 'Team Collaboration',
+    title: 'Simple Team Control',
     description:
-      'Preview deployments for every PR, role-based access control, and seamless Git integration.',
+      'Manage Snapshots together with clear access control and shared configuration—no complex infrastructure required.',
   },
 ];
 
@@ -170,7 +170,7 @@ const pricingPlans = [
   />
 
   <LogoCloud
-    title="Trusted by innovative teams worldwide"
+    title="Trusted by amazing teams and projects"
     logos={[
       { name: 'Logo Ipsum 1', src: '/images/logos/logoipsum-1.svg' },
       { name: 'Logo Ipsum 2', src: '/images/logos/logoipsum-2.svg' },
@@ -184,13 +184,13 @@ const pricingPlans = [
   />
 
   <HowItWorks
-    title="Deploy in 3 simple steps"
+    title="Deploy in 3 Simple Steps"
     subtitle="From dreams to production in minutes, not hours."
     steps={[
       {
         title: 'Create a Snapshot',
         description:
-          "A smart environment that expands when your server is online and falls back when it’s not.",
+          'A smart environment that expands when your server is online and falls back when it’s not.',
         icon: 'lucide:server',
       },
       {
@@ -201,7 +201,8 @@ const pricingPlans = [
       },
       {
         title: 'Deploy & Live',
-        description: 'Your site is now reachable worldwide. If your server goes offline, Snapshot automatically serves a fallback.',
+        description:
+          'Your site is now reachable worldwide. If your server goes offline, Snapshot automatically serves a fallback.',
         icon: 'lucide:rocket',
       },
     ]}
@@ -221,8 +222,8 @@ const pricingPlans = [
   />
 
   <FeaturesSection
-    title="Everything you need to ship"
-    subtitle="From development to production, Snapshot provides all the tools your team needs to move fast and stay reliable."
+    title="Everything You Need to Ship"
+    subtitle="From development to production, Snapshot provides all the tools your team needs to move fast and stay online."
     features={features}
     background="muted"
     footerLink={{ label: 'View all feature →', href: '/features' }}
@@ -236,8 +237,8 @@ const pricingPlans = [
   />
 
   <PricingTable
-    title="Simple, transparent pricing"
-    subtitle="Start free and scale as you grow. No hidden fees."
+    title="Pricing That Scales With You"
+    subtitle="No surprises. No hidden costs."
     plans={pricingPlans}
     annualDiscount={20}
     background="default"
@@ -247,7 +248,7 @@ const pricingPlans = [
   {
     siteConfig.features.testimonials && sortedTestimonials.length > 0 && (
       <TestimonialsSection
-        title="Loved by developers"
+        title="Loved by Developers"
         subtitle="Join teams and projects powered by Snapshot."
         background="muted"
         limit={4}
