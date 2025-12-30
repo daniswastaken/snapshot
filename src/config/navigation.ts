@@ -19,14 +19,12 @@ export const navigation: Navigation = {
    */
   header: {
     main: [
-      { label: 'How It Works', href: '/how-it-works' },
-      { label: 'Features', href: '/features' },
-      { label: 'Pricing', href: '/pricing' },
-      { label: 'Docs', href: '/docs', feature: 'docs' },
+      { label: 'How It Works', href: '#how-it-works' },
+      { label: 'Features', href: '#features' },
+      { label: 'Pricing', href: '#pricing' }
     ],
     cta: [
-      { label: 'Login', href: '/login', variant: 'ghost' },
-      { label: 'Get Started', href: '/register', variant: 'primary' },
+      { label: 'Get Started', href: '#pricing', variant: 'primary' },
     ],
   },
 
