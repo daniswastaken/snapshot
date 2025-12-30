@@ -61,7 +61,7 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, siteConfig.url);
-const fullTitle = `${title} | ${siteConfig.name}`;
+const fullTitle = `${title}`;
 const imageUrl = image || siteConfig.ogImage;
 const ogImage = imageUrl ? new URL(imageUrl, siteConfig.url).href : undefined;
 
