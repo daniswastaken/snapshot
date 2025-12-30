@@ -27,7 +27,7 @@ const {
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,9 +46,9 @@ const {
     <script is:inline>
       (function () {
         // Theme initialization
-        const stored = localStorage.getItem('theme');
+        const stored = localStorage.getItem('theme', 'dark');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = stored || (prefersDark ? 'dark' : 'light');
+        const theme = stored || (prefersDark ? 'dark' : 'dark');
         if (theme === 'dark') {
           document.documentElement.classList.add('dark');
         }
