@@ -228,7 +228,6 @@ const pricingPlans = [
     subtitle="From development to production, Snapshot provides all the tools your team needs to move fast and stay online."
     features={features}
     background="muted"
-    footerLink={{ label: 'View all feature →', href: '/features' }}
   />
 
   <BentoGrid
@@ -244,7 +243,6 @@ const pricingPlans = [
     plans={pricingPlans}
     annualDiscount={20}
     background="default"
-    footerLink={{ label: 'View full pricing details →', href: '/pricing' }}
   />
 
   {
@@ -254,7 +252,6 @@ const pricingPlans = [
         subtitle="Join teams and projects powered by Snapshot."
         background="muted"
         limit={4}
-        footerLink={{ label: 'View all testimonial →', href: '/testimonials' }}
         testimonials={sortedTestimonials.map((t) => ({
           quote: t.data.quote,
           author: t.data.author,
