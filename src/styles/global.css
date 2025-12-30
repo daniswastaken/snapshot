@@ -165,3 +165,24 @@ select:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+
+/* Custom logo sizing */
+img[alt="Bedrock Perfected"] {
+  height: 4.0rem !important;
+  max-width: 300px !important;
+}
+
+img[alt="Fateometer"] {
+  height: 4.0rem !important;
+  max-width: 300px !important;
+}
+
+img[alt="Luminary"] {
+  height: 4.0rem !important;
+  max-width: 200px !important;
+}
+
+img[alt="daniswastaken"] {
+  height: 4.0rem !important;
+  max-width: 250px !important;
+}
