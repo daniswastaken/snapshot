@@ -163,10 +163,10 @@ const pricingPlans = [
   description={siteConfig.description}
 >
   <Hero
-    title="The Deployment Platform Developers Love"
-    subtitle="Virex automates your entire workflow from GitHub to Global Edge. Build, preview, and ship applications with a single click. No server management needed."
-    primaryCTA={{ label: 'Get Started Free', href: '/register' }}
-    secondaryCTA={{ label: 'View Dashboard Demo', href: '/dashboard' }}
+    title="Online, Even When Your Server Isn't"
+    subtitle="Snapshot ensures your services stays online with seamless failover and smart routing."
+    primaryCTA={{ label: 'Get Started', href: '/register' }}
+    secondaryCTA={{ label: 'Contact', href: '/dashboard' }}
   />
 
   <LogoCloud
@@ -185,23 +185,23 @@ const pricingPlans = [
 
   <HowItWorks
     title="Deploy in 3 simple steps"
-    subtitle="From code to production in minutes, not hours."
+    subtitle="From dreams to production in minutes, not hours."
     steps={[
       {
-        title: 'Connect your repo',
+        title: 'Create a Snapshot',
         description:
-          "Link your GitHub, GitLab, or Bitbucket repository. We'll detect your framework automatically.",
-        icon: 'lucide:git-branch',
+          "A smart environment that expands when your server is online and falls back when it’s not.",
+        icon: 'lucide:server',
       },
       {
-        title: 'Configure & customize',
+        title: 'Configure & Connect',
         description:
-          'Set environment variables, custom domains, and build settings. Or use our smart defaults.',
+          'Set domains, routing rules, and fallback behavior. Customize only what you need—defaults handle the rest.',
         icon: 'lucide:settings',
       },
       {
-        title: 'Deploy & scale',
-        description: 'Push your code and watch it go live globally. Auto-scaling handles the rest.',
+        title: 'Deploy & Live',
+        description: 'Your site is now reachable worldwide. If your server goes offline, Snapshot automatically serves a fallback.',
         icon: 'lucide:rocket',
       },
     ]}
@@ -211,7 +211,7 @@ const pricingPlans = [
 
   <IntegrationsGrid
     title="Integrations"
-    subtitle="Our platform integrates seamlessly with the tools you already use."
+    subtitle="Fully integrated and compatible with all the platform you use."
     integrations={featuredIntegrations}
     variant="detailed"
     invertOnDark={false}
@@ -222,7 +222,7 @@ const pricingPlans = [
 
   <FeaturesSection
     title="Everything you need to ship"
-    subtitle="From development to production, Virex provides all the tools your team needs to move fast and stay reliable."
+    subtitle="From development to production, Snapshot provides all the tools your team needs to move fast and stay reliable."
     features={features}
     background="muted"
     footerLink={{ label: 'View all feature →', href: '/features' }}
@@ -230,7 +230,7 @@ const pricingPlans = [
 
   <BentoGrid
     title="Developer-First Features"
-    subtitle="Built by developers, for developers. Every feature designed to make your workflow smoother."
+    subtitle="Built by developers, for developers with ease of use and performance in mind."
     items={bentoItems}
     background="muted"
   />
@@ -248,7 +248,7 @@ const pricingPlans = [
     siteConfig.features.testimonials && sortedTestimonials.length > 0 && (
       <TestimonialsSection
         title="Loved by developers"
-        subtitle="Join thousands of teams who trust Virex to power their deployments."
+        subtitle="Join teams and projects powered by Snapshot."
         background="muted"
         limit={4}
         footerLink={{ label: 'View all testimonial →', href: '/testimonials' }}
@@ -264,10 +264,8 @@ const pricingPlans = [
   }
 
   <CTA
-    title="Ready to ship faster?"
-    description="Get started with Virex today. No credit card required for the free tier."
+    title="Start with Snapshot"
+    description="Turn your dreams into a reliable public endpoint—no complex setup required."
     action={{ label: 'Get Started', href: '/register' }}
   />
-
-  <Newsletter />
 </MarketingLayout>
